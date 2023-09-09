@@ -1,8 +1,34 @@
 {
 	"name": "swapi-typespec",
+	"version": "1.0.0-alpha.0",
 	"description": "TypeSpec representation of SWAPI: The Star Wars API.",
-	"version": "1.0.0-prerelease",
+	"keywords": [
+		"api",
+		"openapi",
+		"openapi3",
+		"star wars",
+		"swagger",
+		"swapi",
+		"typespec"
+	],
+	"homepage": "https://github.com/connorjs/swapi-typespec#readme",
+	"bugs": {
+		"url": "https://github.com/connorjs/swapi-typespec/issues"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Connor Sullivan",
+		"email": "dev.connorjs@gmail.com",
+		"url": "https://github.com/connorjs"
+	},
 	"type": "module",
+	"files": [
+		"index.js",
+		"swapi.openapi.yaml"
+	],
+	"exports": {
+		".": "./index.js"
+	},
 	"scripts": {
 		"build": "tsp compile src",
 		"format": "prettier -l '**/*.{json,md,tsp,yaml,yml}'",

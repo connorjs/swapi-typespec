@@ -2,6 +2,6 @@ emit:
   - "@typespec/openapi3"
 options:
   "@typespec/openapi3":
-    emitter-output-dir: "{project-root}/dist"
+    emitter-output-dir: "{project-root}" # emit to the root for distribution
     omit-unreachable-types: true
-    output-file: "swapi.openapi.yaml"
+    output-file: "swapi.openapi.yaml" # matches `files` in `package.json` and is in `.gitignore`
