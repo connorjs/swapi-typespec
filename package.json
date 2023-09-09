@@ -4,7 +4,7 @@
 	"version": "1.0.0-prerelease",
 	"type": "module",
 	"scripts": {
-		"build": "tsp compile .",
+		"build": "tsp compile src",
 		"format": "prettier -l '**/*.{json,md,tsp,yaml}'",
 		"format:fix": "npm run format -- -w",
 		"prepare": "is-ci || husky install",
