@@ -1,2 +1,2 @@
 import "./root.tsp";
-import "./person.tsp";
+import "./people.tsp";
