@@ -5,13 +5,13 @@
 	"type": "module",
 	"scripts": {
 		"build": "tsp compile src",
-		"format": "prettier -l '**/*.{json,md,tsp,yaml}'",
+		"format": "prettier -l '**/*.{json,md,tsp,yaml,yml}'",
 		"format:fix": "npm run format -- -w",
 		"prepare": "is-ci || husky install",
 		"release": "npm run build && npm run format"
 	},
 	"lint-staged": {
-		"**/*.{json,md,tsp,yaml}": "prettier -w"
+		"**/*.{json,md,tsp,yaml,yml}": "prettier -w"
 	},
 	"devDependencies": {
 		"@typespec/compiler": "~0.47.1",
