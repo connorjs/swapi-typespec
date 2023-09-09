@@ -1,0 +1,2 @@
+@service
+namespace SWAPI;

@@ -1,0 +1,15 @@
+{
+	"name": "swapi-typespec",
+	"description": "TypeSpec representation of SWAPI: The Star Wars API.",
+	"version": "1.0.0-prerelease",
+	"type": "module",
+	"scripts": {
+		"build": "tsp compile .",
+		"format": "tsp format --check **/*.tsp",
+		"format:fix": "tsp format **/*.tsp",
+		"release": "npm run build && npm run format"
+	},
+	"devDependencies": {
+		"@typespec/compiler": "~0.47.1"
+	}
+}
