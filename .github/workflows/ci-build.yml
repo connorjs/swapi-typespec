@@ -25,9 +25,3 @@ jobs:
 
       - name: Run release build targets
         run: npm run release
-
-      - name: Archive artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: dist
-          path: dist
