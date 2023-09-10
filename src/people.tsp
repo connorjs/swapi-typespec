@@ -49,14 +49,26 @@ model Person {
 	skin_color: string;
 
 	/** The URL of a planet resource, a planet that this person was born on or inhabits. */
-	homeworld: string;
+	homeworld: url;
+
+	/** An array of film resource URLs that this person has been in. */
+	films: url[];
+
+	/** An array of species resource URLs that this person belongs to. */
+	species: url[];
+
+	/** An array of starship resource URLs that this person has piloted. */
+	starships: url[];
+
+	/** An array of vehicle resource URLs that this person has piloted. */
+	vehicles: url[];
 
 	/** The hypermedia URL of this resource. */
-	url: string;
+	url: url;
 
 	/** The ISO 8601 date format of the time that this resource was created. */
-	created: string;
+	created: utcDateTime;
 
 	/** The ISO 8601 date format of the time that this resource was edited. */
-	edited: string;
+	edited: utcDateTime;
 }

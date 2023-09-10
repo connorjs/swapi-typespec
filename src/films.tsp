@@ -28,7 +28,7 @@ model Film {
 	title: string;
 
 	/** The episode number of this film. */
-	episode_id: integer;
+	episode_id: int32;
 
 	/** The opening paragraphs at the beginning of this film. */
 	opening_crawl: string;
@@ -42,12 +42,27 @@ model Film {
 	/** The ISO 8601 date format of film release at original creator country. */
 	release_date: plainDate;
 
+	/** An array of species resource URLs that are in this film. */
+	species: url[];
+
+	/** An array of starship resource URLs that are in this film. */
+	starships: url[];
+
+	/** An array of vehicle resource URLs that are in this film. */
+	vehicles: url[];
+
+	/** An array of people resource URLs that are in this film. */
+	characters: url[];
+
+	/** An array of planet resource URLs that are in this film. */
+	planets: url[];
+
 	/** The hypermedia URL of this resource. */
-	url: string;
+	url: url;
 
 	/** The ISO 8601 date format of the time that this resource was created. */
-	created: string;
+	created: utcDateTime;
 
 	/** The ISO 8601 date format of the time that this resource was edited. */
-	edited: string;
+	edited: utcDateTime;
 }

@@ -51,12 +51,18 @@ model Planet {
 	/** The percentage of the planet surface that is naturally occurring water or bodies of water. */
 	surface_water: string;
 
+	/** An array of People URL Resources that live on this planet. */
+	residents: url[];
+
+	/** An array of Film URL Resources that this planet has appeared in. */
+	films: url[];
+
 	/** The hypermedia URL of this resource. */
-	url: string;
+	url: url;
 
 	/** The ISO 8601 date format of the time that this resource was created. */
-	created: string;
+	created: utcDateTime;
 
 	/** The ISO 8601 date format of the time that this resource was edited. */
-	edited: string;
+	edited: utcDateTime;
 }

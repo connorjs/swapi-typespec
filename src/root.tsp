@@ -13,20 +13,20 @@ op root(): Root;
  */
 model Root {
 	/** The URL root for Film resources. */
-	films: string;
+	films: url;
 
 	/** The URL root for People resources. */
-	people: string;
+	people: url;
 
 	/** The URL root for Planet resources. */
-	planets: string;
+	planets: url;
 
 	/** The URL root for Species resources. */
-	species: string;
+	species: url;
 
 	/** The URL root for Starships resources. */
-	starships: string;
+	starships: url;
 
 	/** The URL root for Vehicles resources. */
-	vehicles: string;
+	vehicles: url;
 }

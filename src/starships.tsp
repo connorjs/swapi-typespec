@@ -63,12 +63,18 @@ model Starship {
 	/** The maximum length of time that this starship can provide consumables for its entire crew without having to resupply. */
 	consumables: string;
 
+	/** An array of Film URL Resources that this starship has appeared in. */
+	films: url[];
+
+	/** An array of People URL Resources that this starship has been piloted by. */
+	pilots: url[];
+
 	/** The hypermedia URL of this resource. */
-	url: string;
+	url: url;
 
 	/** The ISO 8601 date format of the time that this resource was created. */
-	created: string;
+	created: utcDateTime;
 
 	/** The ISO 8601 date format of the time that this resource was edited. */
-	edited: string;
+	edited: utcDateTime;
 }

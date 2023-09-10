@@ -51,12 +51,21 @@ model Species {
 	/** The language commonly spoken by this species. */
 	language: string;
 
+	/** The URL of a planet resource, a planet that this species originates from. */
+	homeworld: url;
+
+	/** An array of People URL Resources that are a part of this species. */
+	people: url[];
+
+	/** An array of Film URL Resources that this species has appeared in. */
+	films: url[];
+
 	/** The hypermedia URL of this resource. */
-	url: string;
+	url: url;
 
 	/** The ISO 8601 date format of the time that this resource was created. */
-	created: string;
+	created: utcDateTime;
 
 	/** The ISO 8601 date format of the time that this resource was edited. */
-	edited: string;
+	edited: utcDateTime;
 }
