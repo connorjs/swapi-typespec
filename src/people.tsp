@@ -1,3 +1,5 @@
+import "./common.tsp";
+
 using TypeSpec.Http;
 
 namespace SWAPI;
@@ -62,12 +64,5 @@ model Person {
 	/** An array of vehicle resource URLs that this person has piloted. */
 	vehicles: url[];
 
-	/** The hypermedia URL of this resource. */
-	url: url;
-
-	/** The ISO 8601 date format of the time that this resource was created. */
-	created: utcDateTime;
-
-	/** The ISO 8601 date format of the time that this resource was edited. */
-	edited: utcDateTime;
+	...CommonResourceMembers;
 }
