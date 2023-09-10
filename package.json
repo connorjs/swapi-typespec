@@ -1,6 +1,6 @@
 {
 	"name": "swapi-typespec",
-	"version": "1.0.0-alpha.0",
+	"version": "1.0.0-alpha.1",
 	"description": "TypeSpec representation of SWAPI: The Star Wars API.",
 	"keywords": [
 		"api",
