@@ -12,16 +12,13 @@ namespace planets {
 	@OpenAPI.operationId("ListPlanet")
 	op list(@query search: string): Planet[];
 
-	@route("/{planetId}")
-	namespace planet {
-		/**
-		 * Get a specific planet resource.
-		 *
-		 * @param planetId Numeric ID of the planet to get.
-		 */
-		@OpenAPI.operationId("GetPlanet")
-		op read(@path planetId: int32): Planet;
-	}
+	/**
+	 * Get a specific planet resource.
+	 *
+	 * @param planetId Numeric ID of the planet to get.
+	 */
+	@OpenAPI.operationId("GetPlanet")
+	op read(@path planetId: int32): Planet;
 }
 
 /** A Planet resource is a large mass, planet or planetoid in the Star Wars Universe, at the time of 0 ABY. */

@@ -12,16 +12,13 @@ namespace people {
 	@OpenAPI.operationId("ListPerson")
 	op list(@query search: string): Person[];
 
-	@route("/{personId}")
-	namespace person {
-		/**
-		 * Get a specific people resource.
-		 *
-		 * @param personId Numeric ID of the person to get.
-		 */
-		@OpenAPI.operationId("GetPerson")
-		op read(@path personId: int32): Person;
-	}
+	/**
+	 * Get a specific people resource.
+	 *
+	 * @param personId Numeric ID of the person to get.
+	 */
+	@OpenAPI.operationId("GetPerson")
+	op read(@path personId: int32): Person;
 }
 
 /** A People resource is an individual person or character within the Star Wars universe. */

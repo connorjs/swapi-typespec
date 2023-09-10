@@ -12,16 +12,13 @@ namespace starships {
 	@OpenAPI.operationId("ListStarships")
 	op list(@query search: string): Starship[];
 
-	@route("/{starshipId}")
-	namespace starship {
-		/**
-		 * Get a specific starship resource.
-		 *
-		 * @param starshipId Numeric ID of the starship to get.
-		 */
-		@OpenAPI.operationId("GetStarship")
-		op read(@path starshipId: int32): Starship;
-	}
+	/**
+	 * Get a specific starship resource.
+	 *
+	 * @param starshipId Numeric ID of the starship to get.
+	 */
+	@OpenAPI.operationId("GetStarship")
+	op read(@path starshipId: int32): Starship;
 }
 
 /** A Starship resource is a single transport craft that has hyperdrive capability. */

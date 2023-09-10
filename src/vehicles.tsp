@@ -12,16 +12,13 @@ namespace vehicles {
 	@OpenAPI.operationId("ListVehicles")
 	op list(@query search: string): Vehicle[];
 
-	@route("/{vehicleId}")
-	namespace vehicle {
-		/**
-		 * Get a specific vehicle resource.
-		 *
-		 * @param vehicleId Numeric ID of the vehicle to get.
-		 */
-		@OpenAPI.operationId("GetVehicle")
-		op read(@path vehicleId: int32): Vehicle;
-	}
+	/**
+	 * Get a specific vehicle resource.
+	 *
+	 * @param vehicleId Numeric ID of the vehicle to get.
+	 */
+	@OpenAPI.operationId("GetVehicle")
+	op read(@path vehicleId: int32): Vehicle;
 }
 
 /** A Vehicle resource is a single transport craft that **does not have** hyperdrive capability. */
