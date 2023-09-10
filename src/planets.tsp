@@ -9,7 +9,7 @@ namespace planets {
 	 *
 	 * @param search Case-insensitive partial match on the `name` field.
 	 */
-	@OpenAPI.operationId("ListPlanet")
+	@OpenAPI.operationId("ListPlanets")
 	op list(@query search: string): Planet[];
 
 	/**

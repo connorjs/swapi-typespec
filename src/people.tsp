@@ -9,7 +9,7 @@ namespace people {
 	 *
 	 * @param search Case-insensitive partial match on the `name` field.
 	 */
-	@OpenAPI.operationId("ListPerson")
+	@OpenAPI.operationId("ListPeople")
 	op list(@query search: string): Person[];
 
 	/**
