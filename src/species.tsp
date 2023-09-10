@@ -10,7 +10,7 @@ namespace species {
 	 * @param search Case-insensitive partial match on the `name` field.
 	 */
 	@OpenAPI.operationId("ListSpecies")
-	op list(search: string): Species[];
+	op list(@query search: string): Species[];
 
 	@route("/{speciesId}")
 	namespace species {

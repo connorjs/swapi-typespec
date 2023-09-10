@@ -10,7 +10,7 @@ namespace films {
 	 * @param search Case-insensitive partial match on the `title` field.
 	 */
 	@OpenAPI.operationId("ListFilms")
-	op list(search: string): Film[];
+	op list(@query search: string): Film[];
 
 	@route("/{filmId}")
 	namespace film {
