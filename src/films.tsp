@@ -2,15 +2,23 @@ using TypeSpec.Http;
 
 namespace SWAPI;
 
-// Dev note: See `operation-template.tsp`
-
 @route("/films")
 namespace films {
+	/**
+	 * Get all the films resources.
+	 *
+	 * @param search Case-insensitive partial match on the `name` field.
+	 */
 	@OpenAPI.operationId("ListFilms")
-	op list is List<Film>;
+	op list(@query search: string): Film[];
 
+	/**
+	 * Get a specific film resource.
+	 *
+	 * @param filmId Numeric ID of the film to get.
+	 */
 	@OpenAPI.operationId("GetFilm")
-	op read is Get<Film>;
+	op read(@path filmId: int32): Film;
 }
 
 /** A Film resource is a single film. */
