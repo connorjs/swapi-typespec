@@ -9,6 +9,7 @@ namespace starships {
 	 *
 	 * @param search Case-insensitive partial match on the `name` and `model` fields.
 	 */
+	@OpenAPI.operationId("ListStarships")
 	op list(search: string): Starship[];
 
 	@route("/{starshipId}")
@@ -18,6 +19,7 @@ namespace starships {
 		 *
 		 * @param starshipId Numeric ID of the starship to get.
 		 */
+		@OpenAPI.operationId("GetStarship")
 		op read(@path starshipId: int32): Starship;
 	}
 }

@@ -9,6 +9,7 @@ namespace planets {
 	 *
 	 * @param search Case-insensitive partial match on the `name` field.
 	 */
+	@OpenAPI.operationId("ListPlanet")
 	op list(search: string): Planet[];
 
 	@route("/{planetId}")
@@ -18,6 +19,7 @@ namespace planets {
 		 *
 		 * @param planetId Numeric ID of the planet to get.
 		 */
+		@OpenAPI.operationId("GetPlanet")
 		op read(@path planetId: int32): Planet;
 	}
 }

@@ -1,4 +1,5 @@
 import "@typespec/http";
+import "@typespec/openapi";
 
 import "./films.tsp";
 import "./people.tsp";

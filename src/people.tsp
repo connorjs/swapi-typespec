@@ -9,6 +9,7 @@ namespace people {
 	 *
 	 * @param search Case-insensitive partial match on the `name` field.
 	 */
+	@OpenAPI.operationId("ListPerson")
 	op list(search: string): Person[];
 
 	@route("/{personId}")
@@ -18,6 +19,7 @@ namespace people {
 		 *
 		 * @param personId Numeric ID of the person to get.
 		 */
+		@OpenAPI.operationId("GetPerson")
 		op read(@path personId: int32): Person;
 	}
 }

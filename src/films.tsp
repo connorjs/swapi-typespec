@@ -9,6 +9,7 @@ namespace films {
 	 *
 	 * @param search Case-insensitive partial match on the `title` field.
 	 */
+	@OpenAPI.operationId("ListFilms")
 	op list(search: string): Film[];
 
 	@route("/{filmId}")
@@ -18,6 +19,7 @@ namespace films {
 		 *
 		 * @param filmId Numeric ID of the film to get.
 		 */
+		@OpenAPI.operationId("GetFilm")
 		op read(@path filmId: int32): Film;
 	}
 }

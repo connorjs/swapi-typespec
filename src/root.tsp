@@ -4,8 +4,10 @@ namespace SWAPI;
 
 /** Gets the `Root` resource. */
 @route("/")
-@get
-op root(): Root;
+namespace root {
+	@OpenAPI.operationId("GetRoot")
+	op read(): Root;
+}
 
 /**
  * The Root resource provides information on all available resources within the

@@ -9,6 +9,7 @@ namespace vehicles {
 	 *
 	 * @param search Case-insensitive partial match on the `name` and `model` fields.
 	 */
+	@OpenAPI.operationId("ListVehicles")
 	op list(search: string): Vehicle[];
 
 	@route("/{vehicleId}")
@@ -18,6 +19,7 @@ namespace vehicles {
 		 *
 		 * @param vehicleId Numeric ID of the vehicle to get.
 		 */
+		@OpenAPI.operationId("GetVehicle")
 		op read(@path vehicleId: int32): Vehicle;
 	}
 }

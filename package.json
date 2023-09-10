@@ -42,6 +42,7 @@
 	"devDependencies": {
 		"@typespec/compiler": "~0.47.1",
 		"@typespec/http": "~0.47.0",
+		"@typespec/openapi": "^0.47.0",
 		"@typespec/openapi3": "~0.47.0",
 		"@typespec/prettier-plugin-typespec": "~0.47.0",
 		"husky": "^8.0.3",

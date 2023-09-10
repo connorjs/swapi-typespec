@@ -9,6 +9,7 @@ namespace species {
 	 *
 	 * @param search Case-insensitive partial match on the `name` field.
 	 */
+	@OpenAPI.operationId("ListSpecies")
 	op list(search: string): Species[];
 
 	@route("/{speciesId}")
@@ -18,6 +19,7 @@ namespace species {
 		 *
 		 * @param speciesId Numeric ID of the species to get.
 		 */
+		@OpenAPI.operationId("GetSpecies")
 		op read(@path speciesId: int32): Species;
 	}
 }
