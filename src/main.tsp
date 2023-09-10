@@ -1,7 +1,18 @@
-import "./root.tsp";
-import "./people.tsp";
+import "@typespec/http";
+
 import "./films.tsp";
+import "./people.tsp";
+import "./planets.tsp";
+import "./root.tsp";
+import "./species.tsp";
 import "./starships.tsp";
 import "./vehicles.tsp";
-import "./species.tsp";
-import "./planets.tsp";
+
+using TypeSpec.Http;
+
+@service({
+	title: "SWAPI: The Star Wars API",
+	version: "v1",
+})
+@server("https://swapi.dev/api/", "SWAPI server")
+namespace SWAPI;

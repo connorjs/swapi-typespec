@@ -1,14 +1,5 @@
-import "@typespec/http";
-import "@typespec/rest";
-
 using TypeSpec.Http;
-using TypeSpec.Rest;
 
-@service({
-	title: "SWAPI: The Star Wars API",
-	version: "v1",
-})
-@server("https://swapi.dev/api/", "SWAPI server")
 namespace SWAPI;
 
 /** Gets the `Root` resource. */

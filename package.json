@@ -44,7 +44,6 @@
 		"@typespec/http": "~0.47.0",
 		"@typespec/openapi3": "~0.47.0",
 		"@typespec/prettier-plugin-typespec": "~0.47.0",
-		"@typespec/rest": "~0.47.0",
 		"husky": "^8.0.3",
 		"is-ci": "^3.0.1",
 		"lint-staged": "^14.0.1",

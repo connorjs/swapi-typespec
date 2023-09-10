@@ -19,6 +19,9 @@ Use `npm run` to list all available scripts. The `release` script executes a
 - Using `@resource` adds _all_ REST operations. Thus, the spec files explicitly
   configure `list` and `read` operations because SWAPI only supports those.
 
+  As a result, this project does not use `@typespec/rest` at all. Instead, it
+  only needs `@typespec/http` for the API definitions.
+
 - Use backticks to escape properties that are TypeSpec keywords. For example,
   ```typespec
   `model`: string; // Used in starships.tsp
