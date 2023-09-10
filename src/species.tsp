@@ -1,3 +1,5 @@
+import "./common.tsp";
+
 using TypeSpec.Http;
 
 namespace SWAPI;
@@ -60,13 +62,6 @@ namespace species {
 		/** An array of Film URL Resources that this species has appeared in. */
 		films: url[];
 
-		/** The hypermedia URL of this resource. */
-		url: url;
-
-		/** The ISO 8601 date format of the time that this resource was created. */
-		created: utcDateTime;
-
-		/** The ISO 8601 date format of the time that this resource was edited. */
-		edited: utcDateTime;
+		...CommonResourceMembers;
 	}
 }

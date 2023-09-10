@@ -1,3 +1,5 @@
+import "./common.tsp";
+
 using TypeSpec.Http;
 
 namespace SWAPI;
@@ -68,12 +70,5 @@ model Starship {
 	/** An array of People URL Resources that this starship has been piloted by. */
 	pilots: url[];
 
-	/** The hypermedia URL of this resource. */
-	url: url;
-
-	/** The ISO 8601 date format of the time that this resource was created. */
-	created: utcDateTime;
-
-	/** The ISO 8601 date format of the time that this resource was edited. */
-	edited: utcDateTime;
+	...CommonResourceMembers;
 }
