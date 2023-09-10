@@ -11,7 +11,7 @@ namespace starships {
 	/**
 	 * Get all the starship resources.
 	 *
-	 * @param search Case-insensitive partial match on the `title` field.
+	 * @param search Case-insensitive partial match on the `name` and `model` fields.
 	 */
 	op list(search: string): Starship[];
 
