@@ -2,6 +2,7 @@ import "@typespec/http";
 import "@typespec/openapi";
 
 import "./films.tsp";
+import "./operation-templates.tsp";
 import "./people.tsp";
 import "./planets.tsp";
 import "./root.tsp";
