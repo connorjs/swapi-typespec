@@ -30,24 +30,14 @@
 		".": "./index.js"
 	},
 	"scripts": {
-		"build": "tsp compile src",
-		"format": "prettier -l '**/*.{json,md,tsp,yaml,yml}'",
-		"format:fix": "npm run format -- -w",
-		"prepare": "is-ci || husky install",
-		"release": "npm run build && npm run format"
-	},
-	"lint-staged": {
-		"**/*.{json,md,tsp,yaml,yml}": "prettier -w"
+		"compile": "tsp compile src",
+		"format": "tsp format \"**/*.tsp\"",
+		"format:check": "tsp format --check \"**/*.tsp\""
 	},
 	"devDependencies": {
-		"@typespec/compiler": "~0.47.1",
-		"@typespec/http": "~0.47.0",
+		"@typespec/compiler": "^0.47.1",
+		"@typespec/http": "^0.47.0",
 		"@typespec/openapi": "^0.47.0",
-		"@typespec/openapi3": "~0.47.0",
-		"@typespec/prettier-plugin-typespec": "~0.47.0",
-		"husky": "^8.0.3",
-		"is-ci": "^3.0.1",
-		"lint-staged": "^14.0.1",
-		"prettier": "^3.0.3"
+		"@typespec/openapi3": "^0.47.0"
 	}
 }
