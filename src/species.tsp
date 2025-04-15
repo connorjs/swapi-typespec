@@ -1,6 +1,7 @@
 import "./common.tsp";
 
-using TypeSpec.Http;
+using Http;
+using OpenAPI;
 
 namespace SWAPI;
 
@@ -11,7 +12,7 @@ namespace species {
 	 *
 	 * @param search Case-insensitive partial match on the `name` field.
 	 */
-	@OpenAPI.operationId("ListSpecies")
+	@operationId("ListSpecies")
 	op list(@query search: string): Species[];
 
 	namespace species {
@@ -20,7 +21,7 @@ namespace species {
 		 *
 		 * @param speciesId Numeric ID of the species to get.
 		 */
-		@OpenAPI.operationId("GetSpecies")
+		@operationId("GetSpecies")
 		op read(@path speciesId: int32): Species;
 	}
 

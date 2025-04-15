@@ -1,6 +1,7 @@
 import "./common.tsp";
 
-using TypeSpec.Http;
+using Http;
+using OpenAPI;
 
 namespace SWAPI;
 
@@ -11,7 +12,7 @@ namespace starships {
 	 *
 	 * @param search Case-insensitive partial match on the `name` and `model` fields.
 	 */
-	@OpenAPI.operationId("ListStarships")
+	@operationId("ListStarships")
 	op list(@query search: string): Starship[];
 
 	/**
@@ -19,7 +20,7 @@ namespace starships {
 	 *
 	 * @param starshipId Numeric ID of the starship to get.
 	 */
-	@OpenAPI.operationId("GetStarship")
+	@operationId("GetStarship")
 	op read(@path starshipId: int32): Starship;
 }
 
