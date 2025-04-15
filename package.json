@@ -45,11 +45,6 @@
 		"**/*": "prettier --ignore-unknown --write"
 	},
 	"devDependencies": {
-		"@typespec/compiler": "~0.47.1",
-		"@typespec/http": "~0.47.0",
-		"@typespec/openapi": "^0.47.0",
-		"@typespec/openapi3": "~0.47.0",
-		"@typespec/prettier-plugin-typespec": "~0.47.0",
 		"husky": "^9.1.7",
 		"lint-staged": "^15.5.1",
 		"npm-run-all": "^4.1.5",
