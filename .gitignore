@@ -1,2 +1,6 @@
+# Build artifacts
 node_modules/
 swapi.openapi.yaml
+
+# IDEs
+.idea/

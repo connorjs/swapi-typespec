@@ -12,16 +12,16 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Use Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version-file: .node-version
           cache: npm
 
-      - name: Install
+      - name: Restore
         run: npm ci
 
-      - name: Run release build targets
-        run: npm run release
+      - name: Build
+        run: npm run build:release

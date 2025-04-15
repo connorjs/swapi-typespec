@@ -2,6 +2,9 @@
 
 [TypeSpec][typespec] representation of [SWAPI: The Star Wars API][swapi].
 
+[swapi]: https://swapi.dev
+[typespec]: https://microsoft.github.io/typespec/
+
 <!-- Badges: Use link shorthand for readability and easier reordering -->
 
 [![CI Build][ci-build-badge]][ci-build]
@@ -26,7 +29,7 @@ reduction in lines of code.
 If we ignore the imports, using statements, and blank lines within models, then
 the TypeSpec only has 353 lines. That means a 60% reduction in code to maintain.
 
-## Getting started
+## Installation
 
 Follow these steps to consume the generated Open API specification for SWAPI.
 
@@ -42,5 +45,6 @@ Follow these steps to consume the generated Open API specification for SWAPI.
    ./node_modules/swapi-typespec/swapi.openapi.yaml
    ```
 
-[swapi]: https://swapi.dev
-[typespec]: https://microsoft.github.io/typespec/
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for details.
