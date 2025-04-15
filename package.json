@@ -30,14 +30,19 @@
 		".": "./index.js"
 	},
 	"scripts": {
-		"build": "tsp compile src",
-		"format": "prettier -l '**/*.{json,md,tsp,yaml,yml}'",
-		"format:fix": "npm run format -- -w",
-		"prepare": "is-ci || husky install",
-		"release": "npm run build && npm run format"
+		"prepare": "husky",
+		"――――――――――――――――――――――――――――― Main ―――――――――――――――――――――――――――――": "",
+		"build:debug": "npm-run-all -s prettier:fix tsp",
+		"build:release": "npm-run-all -s prettier:check tsp",
+		"―――――――――――――――――――――――――――― Tools ―――――――――――――――――――――――――――――": "",
+		"――――――――――――――――――――――――――― Prettier ―――――――――――――――――――――――――――": "",
+		"prettier:check": "prettier --ignore-unknown --check .",
+		"prettier:fix": "prettier --ignore-unknown --list-different --write .",
+		"――――――――――――――――――――――――――― TypeSpec ―――――――――――――――――――――――――――": "",
+		"tsp": "tsp compile src"
 	},
 	"lint-staged": {
-		"**/*.{json,md,tsp,yaml,yml}": "prettier -w"
+		"**/*": "prettier --ignore-unknown --write"
 	},
 	"devDependencies": {
 		"@typespec/compiler": "~0.47.1",
@@ -45,9 +50,9 @@
 		"@typespec/openapi": "^0.47.0",
 		"@typespec/openapi3": "~0.47.0",
 		"@typespec/prettier-plugin-typespec": "~0.47.0",
-		"husky": "^8.0.3",
-		"is-ci": "^3.0.1",
-		"lint-staged": "^14.0.1",
-		"prettier": "^3.0.3"
+		"husky": "^9.1.7",
+		"lint-staged": "^15.5.1",
+		"npm-run-all": "^4.1.5",
+		"prettier": "^3.5.3"
 	}
 }
