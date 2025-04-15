@@ -1,6 +1,7 @@
 import "./common.tsp";
 
-using TypeSpec.Http;
+using Http;
+using OpenAPI;
 
 namespace SWAPI;
 
@@ -11,7 +12,7 @@ namespace people {
 	 *
 	 * @param search Case-insensitive partial match on the `name` field.
 	 */
-	@OpenAPI.operationId("ListPeople")
+	@operationId("ListPeople")
 	op list(@query search: string): Person[];
 
 	/**
@@ -19,7 +20,7 @@ namespace people {
 	 *
 	 * @param personId Numeric ID of the person to get.
 	 */
-	@OpenAPI.operationId("GetPerson")
+	@operationId("GetPerson")
 	op read(@path personId: int32): Person;
 }
 

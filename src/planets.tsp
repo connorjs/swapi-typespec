@@ -1,6 +1,7 @@
 import "./common.tsp";
 
-using TypeSpec.Http;
+using Http;
+using OpenAPI;
 
 namespace SWAPI;
 
@@ -11,7 +12,7 @@ namespace planets {
 	 *
 	 * @param search Case-insensitive partial match on the `name` field.
 	 */
-	@OpenAPI.operationId("ListPlanets")
+	@operationId("ListPlanets")
 	op list(@query search: string): Planet[];
 
 	/**
@@ -19,7 +20,7 @@ namespace planets {
 	 *
 	 * @param planetId Numeric ID of the planet to get.
 	 */
-	@OpenAPI.operationId("GetPlanet")
+	@operationId("GetPlanet")
 	op read(@path planetId: int32): Planet;
 }
 

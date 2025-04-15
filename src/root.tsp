@@ -1,11 +1,12 @@
-using TypeSpec.Http;
+using Http;
+using OpenAPI;
 
 namespace SWAPI;
 
 /** Gets the `Root` resource. */
 @route("/")
 namespace root {
-	@OpenAPI.operationId("GetRoot")
+	@operationId("GetRoot")
 	op read(): Root;
 }
 
