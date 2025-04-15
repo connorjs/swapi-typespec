@@ -16,8 +16,8 @@ using Versioning;
 
 /** SWAPI: The Star Wars API (generated with TypeSpec from [swapi-typespec](https://github.com/connorjs/swapi-typespec#readme)). */
 @service(#{ title: "SWAPI (TypeSpec)" })
-@server("https://swapi.dev/api/", "SWAPI server")
-@externalDocs("https://swapi.dev/")
+@server("https://swapi.info/api/", "SWAPI server")
+@externalDocs("https://swapi.info/")
 @versioned(Version)
 namespace SWAPI;
 

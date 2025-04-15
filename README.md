@@ -1,8 +1,10 @@
 # SWAPI TypeSpec
 
-[TypeSpec][typespec] representation of [SWAPI: The Star Wars API][swapi].
+[TypeSpec][typespec] representation of SWAPI: The Star Wars API.
 
-[swapi]: https://swapi.dev
+🎉 Shout out to [swapi.info][swapi] for hosting a stable version of the API. 🎉
+
+[swapi]: https://swapi.info
 [typespec]: https://microsoft.github.io/typespec/
 
 <!-- Badges: Use link shorthand for readability and easier reordering -->
@@ -21,13 +23,12 @@
 
 I created this project to learn about TypeSpec through first-hand usage.
 
-The generated Open API 3 specification has 878 lines (with no blank lines) in a
-single file. The TypeSpec source has 493 lines (about ⅓ are blank lines for
-readability) split across 8 files for logical organization, which is a ~45%
-reduction in lines of code.
+The generated Open API 3 specification has 878 lines (with no blank lines) in a single file.
+The TypeSpec source has 493 lines (about ⅓ are blank lines for readability) split across 8 files for logical organization.
+This is a ~45% reduction in lines of code.
 
-If we ignore the imports, using statements, and blank lines within models, then
-the TypeSpec only has 353 lines. That means a 60% reduction in code to maintain.
+If we ignore the imports, using statements, and blank lines within models, then the TypeSpec only has 353 lines.
+That means a 60% reduction in code to maintain.
 
 ## Installation
 
